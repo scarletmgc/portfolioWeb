@@ -13,12 +13,16 @@
         html{
             scroll-behavior: smooth;
         }
-        
+
+        li{
+          color: #211e3d !important;
+        }
+
         .lineaNegra {
             position: absolute;
             width: 500%; 
             height: 500%; 
-            background: #000;
+            background: #f9d8d3;
             rotate: 9deg;
             z-index: -1;
             left: -35%;
@@ -42,6 +46,10 @@
 
         .musica{
             margin: auto;
+            color: #000 !important;
+        }
+        .musica h3{
+          color: #000;
         }
     
         #about{
@@ -54,6 +62,10 @@
         }
         .description{
           color: hsl(0, 0%, 100%);
+        }
+
+        .portfolio{
+          color: #000;
         }
 
         
@@ -104,17 +116,35 @@
     
     <div class="container-fluid md-auto">
         <!--Header -->
-        <header class="justify-content-between  fixed-top">
-            <div class="d-flex flex-wrap justify-content-end just">
-              <ul class="nav col-md-10 text-end  justify-content-end ">
-                <li><a href="#about" class="nav-link px-2 nav-link text-white fw-bold py-1 px-0 active">About me</a></li>
-                <li><a href="#skills" class="nav-link px-2 nav-link text-white fw-bold py-1 px-0">Skills</a></li>
-                <li><a href="#" class="nav-link px-2 nav-link text-white fw-bold py-1 px-0 ">Portfolio</a></li>
-              </ul>
-
-              <di v class="text-end col-md-2">
-                  <button type="button" class="btn btn-light rounded-pill text-dark fw-bold" id="#contact">Contact me</button>
+        <header class="justify-content-between fixed-top">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid md-auto">
+              <!--Logo-->
+              <a class="navbar-brand" href="#presentation">Scarlet Gutierrez UX</a>
+              <!--Collapse-->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav nav mb-2 mb-lg-0 justify-content-end">
+                  <li class="nav-item">
+                    <a href="#about" class="nav-link px-2 nav-link fw-bold py-1 px-0 active">About me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#skills" class="nav-link px-2 nav-link fw-bold py-1 px-0">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#portfolio" class="nav-link px-2 nav-link fw-bold py-1 px-0 ">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" class="btn btn-light rounded-pill text-dark fw-bold" id="#contact">Contact me</button>
+                    <a href="#" target="_blank" class="btn btn-primary">Ver más</a>
+                  </li>
+                </ul>
               </div>
+            </div>
+          </nav>
+          
             
         </header>
 
@@ -122,14 +152,14 @@
         <main id="presentation">
             <div class="row showcase">
                 <div class="col-md-6 text-start position-relative md-auto d-inline-flex">
-                    <div class="musica ">
+                    <div class="musica">
                         <h3>Hi, I'm</h3>
                         <h1>Scarlet Gutierrez</h1>
                         <h3>UX ingeenier / UX UI designer</h3>
                     </div>
                 </div>
                 <div class="col-md-6 text-start position-relative md-auto d-inline-flex">
-                    <img src="retrato.png"/>
+                    <img src="Scar-removebg.png"/>
                     <div class="lineaNegra"></div>
                     
                 </div>
@@ -148,7 +178,7 @@
 
         <!-- acerca de mi -->
 
-        <div class="row" id="about">
+        <div class="row m-4" id="about">
             <div class="col-md-12 p-4">
                 <h3 class="text-center">About me</h3>
             </div>
@@ -171,9 +201,9 @@
 
         <!--Skills-->
 
-        <div class="row mb-3 text-center" id="skills">
+        <div class="row m-4 text-center" id="skills">
             <div class="col-md-12">
-                <h3 class="px-3 text-center">Skills</h3>
+                <h3 class="p-4 text-center">Portfolio</h3>
             </div>
         </div>
 
@@ -194,9 +224,9 @@
           </div>
         </div>
         
-        <div class="row mb-3 d-flex justify-content-center">
+        <div class="row m-4 d-flex justify-content-center">
           <div class="col-md-12">
-            <h5 class="px-3 text-center">Develop Tools</h5>
+            <h5 class="p-4 text-center">Develop Tools</h5>
           </div>
         </div>
         
@@ -230,24 +260,32 @@
             <object data="image18.svg" width="90" height="90"></object>
             <object data="Arabic_albayancalligraphy.svg.png" width="90" height="90"></object>
           </div>
-          </div>
         </div>
 
-      
 
-      <!--------------------------------------------------- Galeria de trabajos ----------------------------->
 
+
+
+
+
+
+              <!--------------------------------------------------- Galeria de trabajos ----------------------------->
+      <div class="row text-center m-4" id="portfolio">
+        <div class="col-md-12">
+            <h3 class="p-4 text-center portfolio">Some Works!</h3>
+        </div>
+      </div>
       <!-- Carousel wrapper -->
       
-      <div class="row">
-        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+      <div class="row m-4">
+        <div id="carouselExample" class="carousel slide p-4" data-ride="carousel">
           <div class="carousel-inner">
             <!-- Slide one -->
           <div class="carousel-item active">
           
-            <div class="d-flex">
+            <div class="d-flex justify-content-evenly">
               <div class="col-md-3 mb-4 mb-lg-0 py-4">
-                <div class="card">
+                <div class="card text-center border border-0">
                   <img
                     src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/c0cd8c133437747.64b2475fb9cd0.jpg"
                     class="card-img-top"
@@ -263,7 +301,7 @@
                 </div>
               </div>
               <div class="col-md-3 mb-4 mb-lg-0 py-4">
-                    <div class="card">
+                    <div class="card text-center border border-0">
                       <img
                         src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a19e22169435509.644c35ea8750b.jpg"
                         class="card-img-top"
@@ -281,7 +319,7 @@
               </div>
   
               <div class="col-md-3 mb-4 mb-lg-0 py-4">
-                    <div class="card">
+                    <div class="card text-center border border-0">
                       <img
                         src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2ff70b172697947.64835d026a5c2.jpg"
                         class="card-img-top"
@@ -303,9 +341,9 @@
           <!-- Slide two -->
           <div class="carousel-item">
           
-            <div class="d-flex">
+            <div class="d-flex justify-content-evenly">
               <div class="col-md-3 mb-4 mb-lg-0 py-4">
-                <div class="card">
+                <div class="card text-center border border-0 ">
                   <img
                     src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/c0cd8c133437747.64b2475fb9cd0.jpg"
                     class="card-img-top"
@@ -323,7 +361,7 @@
   
   
               <div class="col-md-3 mb-4 mb-lg-0 py-4">
-                    <div class="card">
+                    <div class="card text-center border border-0">
                       <img
                         src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a19e22169435509.644c35ea8750b.jpg"
                         class="card-img-top"
@@ -341,7 +379,7 @@
               </div>
   
               <div class="col-md-3 mb-4 mb-lg-0 py-4">
-                    <div class="card">
+                    <div class="card text-center border border-0">
                       <img
                         src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2ff70b172697947.64835d026a5c2.jpg"
                         class="card-img-top"
@@ -434,26 +472,12 @@
                 </div>
               </form>
         </div>
-
-      </div>
-
-
-
-                    
-              
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
+
+      
+
+
+
             
         
   
