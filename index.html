@@ -61,7 +61,7 @@
           color: #fff;
         }
         .description{
-          color: hsl(0, 0%, 100%);
+          color: #f9d8d3;
         }
 
         .portfolio{
@@ -102,52 +102,62 @@
             overflow-x: hidden;
         }
 
-        
+        .musica{
+          position: relative;
+          margin: auto;
+          color: #000 !important;
+          top: 60px !important;
+        }
 
-
-        
-
+        #presentation img {
+          position: relative;
+          width: 90%;
+          z-index: 1;
+          top: 30px;
+          margin: auto;
+        }
 
         }
+
 
     </style>
 </head>
 <body>
     
-    <div class="container-fluid md-auto">
+    <div class="container-fluid ">
         <!--Header -->
-        <header class="justify-content-between fixed-top">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid md-auto">
-              <!--Logo-->
-              <a class="navbar-brand" href="#presentation">Scarlet Gutierrez UX</a>
-              <!--Collapse-->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav nav mb-2 mb-lg-0 justify-content-end">
-                  <li class="nav-item">
-                    <a href="#about" class="nav-link px-2 nav-link fw-bold py-1 px-0 active">About me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#skills" class="nav-link px-2 nav-link fw-bold py-1 px-0">Skills</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#portfolio" class="nav-link px-2 nav-link fw-bold py-1 px-0 ">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <button type="button" class="btn btn-light rounded-pill text-dark fw-bold" id="#contact">Contact me</button>
-                    <a href="#" target="_blank" class="btn btn-primary">Ver más</a>
-                  </li>
-                </ul>
+        <div class="row">
+          <header class="justify-content-between fixed-top">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid md-auto">
+                <!--Logo-->
+                <a class="navbar-brand" href="#presentation">Scarlet Gutierrez UX</a>
+                <!--Collapse-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav nav mb-2 mb-lg-0 justify-content-end">
+                    <li class="nav-item">
+                      <a href="#about" class="nav-link px-2 nav-link fw-bold py-1 px-0 active">About me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#skills" class="nav-link px-2 nav-link fw-bold py-1 px-0">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#portfolio" class="nav-link px-2 nav-link fw-bold py-1 px-0 ">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contact" class="btn btn-light rounded-pill text-dark fw-bold">Contact me</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </nav>
-          
-            
-        </header>
-
+            </nav>
+          </header>
+  
+        </div>
+        
         <!--Main-->
         <main id="presentation">
             <div class="row showcase">
@@ -159,7 +169,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-start position-relative md-auto d-inline-flex">
-                    <img src="Scar-removebg.png"/>
+                    <img src="Scar-removebg.png" class="mt-4"/>
                     <div class="lineaNegra"></div>
                     
                 </div>
@@ -168,8 +178,8 @@
 
         <!--Description -->
         <div class="row">
-            <div class="lead bg-dark p-4" >
-              <div class="col-md-12 description">
+            <div class="lead bg-black p-4" >
+              <div class="col-10 description">
                 <p>Greetings! I am a user interface (UI) designer. As a UI designer I have developed the skills to find and implement solutions to interactivity processes between user and device, as well as creativity for attractive views to the user in the constant changes of trends in the UI for multiple platforms (mobile and desktop applications): Digitization is occurring in all areas of society: people, technology, business, economics, etc.
                 </p>
               </div>      
