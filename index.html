@@ -48,7 +48,7 @@
             margin: auto;
             color: #000 !important;
         }
-        .musica h3{
+        .musica h3,#skills h3,h5,h6{
           color: #000;
         }
     
@@ -66,6 +66,15 @@
 
         .portfolio{
           color: #000;
+        }
+        
+        .footer-programs > h6{
+          color: rgba(0, 0, 0, 0.6);
+          font-family: Tahoma, sans-serif;
+          width: 90px;
+          margin: 0 auto;
+          justify-content: center;
+          text-align: center;
         }
 
         
@@ -169,7 +178,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-start position-relative md-auto d-inline-flex">
-                    <img src="Scar-removebg.png" class="mt-4"/>
+                    <img src="features/images/Scar-removebg.png" class="mt-4"/>
                     <div class="lineaNegra"></div>
                     
                 </div>
@@ -188,7 +197,7 @@
 
         <!-- acerca de mi -->
 
-        <div class="row m-4" id="about">
+        <div class="row" id="about">
             <div class="col-md-12 p-4">
                 <h3 class="text-center">About me</h3>
             </div>
@@ -209,45 +218,90 @@
         </div>
 
 
+
+
+
+
+
+
+
+        <!--Educations-->
+        <div class="row">
+          <div class="col-4">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">Item 1</h4>
+              <p>...</p>
+              <h4 id="list-item-2">Item 2</h4>
+              <p>...</p>
+              <h4 id="list-item-3">Item 3</h4>
+              <p>...</p>
+              <h4 id="list-item-4">Item 4</h4>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
         <!--Skills-->
 
-        <div class="row m-4 text-center" id="skills">
+        <div class="row text-center" id="skills">
             <div class="col-md-12">
                 <h3 class="p-4 text-center">Portfolio</h3>
             </div>
         </div>
 
-        <div class="row mb-3 d-flex justify-content-center">
+        <div class="row mt-3 d-flex justify-content-center">
           <div class="col-md-12">
-            <h5 class="px-3 text-center">Design and Prototipe</h5>
+            <h5 class=" text-center">Design and Prototipe</h5>
           </div>
         </div>
 
         <div class="row ">
-          <div class="col-md-6 d-flex justify-content-around">
-            <object data="figma.svg" width="90" height="90"></object>
-            <object data="Group50.svg" width="90" height="90"></object>
+          <div class="col-md-12 d-flex justify-content-around">
+            <object data="features/images/figma.svg" width="90" height="90"></object>
+            <object data="features/images/Group50.svg" width="90" height="90"></object>
+            <object data="features/images/illustrator.svg" width="90" height="90"></object>
+            <object data="features/images/photoshop.svg" width="90" height="90"></object>
           </div>
-          <div class="col-md-6 d-flex justify-content-around">
-            <object data="illustrator.svg" width="90" height="90"></object>
-            <object data="photoshop.svg" width="90" height="90"></object>
+        </div>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-around footer-programs ">
+            <h6>Figma</h6>
+            <h6>Lottie Files</h6>
+            <h6>Illustrator</h6>
+            <h6>Photoshop</h6>
           </div>
         </div>
         
-        <div class="row m-4 d-flex justify-content-center">
+        <div class="row mt-3 d-flex justify-content-center ">
           <div class="col-md-12">
-            <h5 class="p-4 text-center">Develop Tools</h5>
+            <h5 class="text-center">Develop Tools</h5>
           </div>
         </div>
         
         <div class="row ">
-          <div class="col-md-6 d-flex justify-content-around">
-            <object data="bootstrap.svg" width="90" height="90"></object>
-            <object data="git.svg" width="90" height="90"></object>
-          </div>
-          <div class="col-md-6 d-flex justify-content-around">
-            <object data="Group.svg" width="90" height="90"></object>
-            <object data="Group12.svg" width="100" height="100"></object>
+          <div class="col-md-12 d-flex justify-content-around">
+            <object data="features/images/bootstrap.svg" width="90" height="90"></object>
+            <object data="features/images/git.svg" width="90" height="90"></object>
+            <object data="features/images/Group.svg" width="90" height="90"></object>
+            <object data="features/images/Group12.svg" width="100" height="100"></object>
           </div>
         </div>
         <div class="row">
@@ -258,9 +312,9 @@
         </div>
         
 
-        <div class="row mb-3 d-flex justify-content-center">
+        <div class="row mt-3 d-flex justify-content-center">
           <div class="col-md-12">
-            <h5 class="px-3 text-center">Idioms</h5>
+            <h5 class="text-center">Idioms</h5>
           </div>
         </div>
 
@@ -280,15 +334,15 @@
 
 
               <!--------------------------------------------------- Galeria de trabajos ----------------------------->
-      <div class="row text-center m-4" id="portfolio">
+      <div class="row text-center p-4" id="portfolio">
         <div class="col-md-12">
-            <h3 class="p-4 text-center portfolio">Some Works!</h3>
+            <h3 class="pt-4 text-center portfolio">Some Works!</h3>
         </div>
       </div>
       <!-- Carousel wrapper -->
       
-      <div class="row m-4">
-        <div id="carouselExample" class="carousel slide p-4" data-ride="carousel">
+      <div class="row">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel" >
           <div class="carousel-inner">
             <!-- Slide one -->
           <div class="carousel-item active">
@@ -297,14 +351,14 @@
               <div class="col-md-3 mb-4 mb-lg-0 py-4">
                 <div class="card text-center border border-0">
                   <img
-                    src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/c0cd8c133437747.64b2475fb9cd0.jpg"
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/270584137020289.6203cec409393.jpg"
                     class="card-img-top"
                     alt="Peaks Against the Starry Sky"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Color Blind Buttons</h5>
                     <p class="card-text">
-                      Home page about a supermarket online. 
+                      A example about the eAccessibility with button. s
                     </p>
                     <a href="https://www.behance.net/gallery/133437747/Calendar-UI" target="_blank" class="btn btn-primary" >Ver más</a>
                   </div>
@@ -360,9 +414,9 @@
                     alt="Peaks Against the Starry Sky"
                   />
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Calendar UI Views</h5>
                     <p class="card-text">
-                      Home page about a supermarket online. 
+                      this is a calendar for the user can use as agends. This exist two view:  1. "Calendar" a "Semanal". 
                     </p>
                     <a href="https://www.behance.net/gallery/133437747/Calendar-UI" target="_blank" class="btn btn-primary" >Ver más</a>
                   </div>
@@ -378,12 +432,11 @@
                         alt="Peaks Against the Starry Sky"
                       />
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">supermarket</h5>
                         <p class="card-text">
-                          Some quick example text to build on the card title and make up the bulk
-                          of the card's content.
+                          A virtual Supermarket Web Application. This is a Home page with: Car Button, Categories, Subcategories, Search Bar (with optimizations buttons components).
                         </p>
-                        <a href="https://www.behance.net/gallery/172697947/UX-Project-Metro-Santo-Domingo" target="_blank" class="btn btn-primary" onclick=`window.location.href=https://docs.google.com/presentation/d/1LULzMNIlk1sTwvoCV6XVb65tCf_sOkDzDPNLTshFpqk/edit?usp=sharing'`>Ver más</a>
+                        <a href="https://www.behance.net/gallery/169435509/Supermarket" target="_blank" class="btn btn-primary" onclick=`window.location.href=https://www.behance.net/gallery/169435509/Supermarket'`>Ver más</a>
                       </div>
                     </div>
               </div>
@@ -439,9 +492,14 @@
 
 
         <!-- Contact -->
+        <div class="row text-center p-4" id="portfolio">
+          <div class="col-md-12">
+              <h3 class="pt-4 text-center portfolio">Contact me</h3>
+          </div>
+        </div>
 
         <div class="row" id="contact">
-            <form class="row g-3 needs-validation" novalidate>
+            <form class="row needs-validation" novalidate>
                 <div class="col-md-4">
                   <label for="validationCustom01" class="form-label">First name</label>
                   <input type="text" class="form-control" id="validationCustom01" required>
@@ -478,7 +536,7 @@
                 </div>
                 
                 <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
+                  <button class="btn btn-primary" type="submit">Send</button>
                 </div>
               </form>
         </div>
