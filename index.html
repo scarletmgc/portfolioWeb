@@ -7,23 +7,36 @@
     <title>Scarlet Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+    <!--este cambio lo hizo Scarlet-->
     <style>
 
         html{
             scroll-behavior: smooth;
         }
-        
+
+        li{
+          color: #211e3d !important;
+        }
+
         .lineaNegra {
             position: absolute;
             width: 500%; 
             height: 500%; 
-            background: #000;
+            background: #f9d8d3;
             rotate: 9deg;
             z-index: -1;
             left: -35%;
             top: -20px;
             color: white;
+        }
+
+        .showcase {
+          object-fit: contain;
+          overflow: hidden;
+        }
+
+        h3, h5, h6{
+          color: #fff;
         }
 
         img {
@@ -33,14 +46,35 @@
 
         .musica{
             margin: auto;
+            color: #000 !important;
         }
+        .musica h3,#skills h3,h5,h6{
+          color: #000;
+        }
+    
         #about{
             background-color: black;
             color: white;
+        }
 
+        #about i, #about h4{
+          color: #fff;
         }
         .description{
-          color: hsl(0, 0%, 100%);
+          color: #f9d8d3;
+        }
+
+        .portfolio{
+          color: #000;
+        }
+        
+        .footer-programs > h6{
+          color: rgba(0, 0, 0, 0.6);
+          font-family: Tahoma, sans-serif;
+          width: 90px;
+          margin: 0 auto;
+          justify-content: center;
+          text-align: center;
         }
 
         
@@ -71,46 +105,80 @@
             top: -320px;
             /* color: white; */
             rotate: 30deg;
+            z-index: -31;
+            object-fit: contain;
+            object-position: center;
+            overflow-x: hidden;
         }
 
+        .musica{
+          position: relative;
+          margin: auto;
+          color: #000 !important;
+          top: 60px !important;
+        }
 
-        
-
+        #presentation img {
+          position: relative;
+          width: 90%;
+          z-index: 1;
+          top: 30px;
+          margin: auto;
+        }
 
         }
+
 
     </style>
 </head>
-<body class="--bs-tertiary-bg-rgb">
+<body>
     
-    <div class="container-md">
+    <div class="container-fluid ">
         <!--Header -->
-        <header class="justify-content-between  fixed-top">
-            <div class="d-flex flex-wrap justify-content-end just">
-              <ul class="nav col-md-10 text-end  justify-content-end ">
-                <li><a href="#about" class="nav-link px-2 nav-link text-white fw-bold py-1 px-0 active">About me</a></li>
-                <li><a href="#skills" class="nav-link px-2 nav-link text-white fw-bold py-1 px-0">Skills</a></li>
-                <li><a href="#" class="nav-link px-2 nav-link text-white fw-bold py-1 px-0 ">Portfolio</a></li>
-              </ul>
-
-              <di v class="text-end col-md-2">
-                  <button type="button" class="btn btn-light rounded-pill text-dark fw-bold" id="#contact">Contact me</button>
+        <div class="row">
+          <header class="justify-content-between fixed-top">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid md-auto">
+                <!--Logo-->
+                <a class="navbar-brand" href="#presentation">Scarlet Gutierrez UX</a>
+                <!--Collapse-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav nav mb-2 mb-lg-0 justify-content-end">
+                    <li class="nav-item">
+                      <a href="#about" class="nav-link px-2 nav-link fw-bold py-1 px-0 active">About me</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#skills" class="nav-link px-2 nav-link fw-bold py-1 px-0">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#portfolio" class="nav-link px-2 nav-link fw-bold py-1 px-0 ">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contact" class="btn btn-light rounded-pill text-dark fw-bold">Contact me</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            
-        </header>
-
+            </nav>
+          </header>
+  
+        </div>
+        
         <!--Main-->
         <main id="presentation">
-            <div class="row">
+            <div class="row showcase">
                 <div class="col-md-6 text-start position-relative md-auto d-inline-flex">
-                    <div class="musica ">
+                    <div class="musica">
                         <h3>Hi, I'm</h3>
                         <h1>Scarlet Gutierrez</h1>
                         <h3>UX ingeenier / UX UI designer</h3>
                     </div>
                 </div>
                 <div class="col-md-6 text-start position-relative md-auto d-inline-flex">
-                    <img src="retrato.png"/>
+                    <img src="features/images/Scar-removebg.png" class="mt-4"/>
                     <div class="lineaNegra"></div>
                     
                 </div>
@@ -119,8 +187,8 @@
 
         <!--Description -->
         <div class="row">
-            <div class="lead bg-dark" >
-              <div class="col-md-12 description">
+            <div class="lead bg-black p-4" >
+              <div class="col-10 description">
                 <p>Greetings! I am a user interface (UI) designer. As a UI designer I have developed the skills to find and implement solutions to interactivity processes between user and device, as well as creativity for attractive views to the user in the constant changes of trends in the UI for multiple platforms (mobile and desktop applications): Digitization is occurring in all areas of society: people, technology, business, economics, etc.
                 </p>
               </div>      
@@ -130,65 +198,110 @@
         <!-- acerca de mi -->
 
         <div class="row" id="about">
-            <div class="col-md-12">
-                <h3 class="px-3 text-center">About me</h3>
+            <div class="col-md-12 p-4">
+                <h3 class="text-center">About me</h3>
             </div>
-            <div class="col-md-6">
-                <p class="text-body-emphasis">Design</p>
+            <div class="col-md-6 p-4">
+                <h5><i class="bi bi-lightbulb"></i> Design</h5>
                 <p>I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.</p>
             </div>
                     
-            <div class="col-md-6">
-                <h2 class="text-body-emphasis">Development</h2>
+            <div class="col-md-6 p-4">
+                <h5><i class="bi bi-code-slash"></i> Development</h5>
                 <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
             </div>
 
-            <div class="col-md-4 px-3">
-                <h2 class="text-body-emphasis">Maintenance</h2>
+            <div class="col-md-12 p-4">
+                <h5><i class="bi bi-patch-check"></i> Maintenance</h5>
                 <p>Ready to go beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
             </div>
         </div>
 
 
+
+
+
+
+
+
+
+        <!--Educations-->
+        <div class="row">
+          <div class="col-4">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">Item 1</h4>
+              <p>...</p>
+              <h4 id="list-item-2">Item 2</h4>
+              <p>...</p>
+              <h4 id="list-item-3">Item 3</h4>
+              <p>...</p>
+              <h4 id="list-item-4">Item 4</h4>
+              <p>...</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
         <!--Skills-->
 
-        <div class="row mb-3 text-center" id="skills">
+        <div class="row text-center" id="skills">
             <div class="col-md-12">
-                <h3 class="px-3 text-center">Skills</h3>
+                <h3 class="p-4 text-center">Portfolio</h3>
             </div>
         </div>
 
-        <div class="row mb-3 d-flex justify-content-center">
+        <div class="row mt-3 d-flex justify-content-center">
           <div class="col-md-12">
-            <h5 class="px-3 text-center">Design and Prototipe</h5>
+            <h5 class=" text-center">Design and Prototipe</h5>
           </div>
         </div>
 
         <div class="row ">
-          <div class="col-md-6 d-flex justify-content-around">
-            <object data="figma.svg" width="90" height="90"></object>
-            <object data="Group50.svg" width="90" height="90"></object>
+          <div class="col-md-12 d-flex justify-content-around">
+            <object data="features/images/figma.svg" width="90" height="90"></object>
+            <object data="features/images/Group50.svg" width="90" height="90"></object>
+            <object data="features/images/illustrator.svg" width="90" height="90"></object>
+            <object data="features/images/photoshop.svg" width="90" height="90"></object>
           </div>
-          <div class="col-md-6 d-flex justify-content-around">
-            <object data="illustrator.svg" width="90" height="90"></object>
-            <object data="photoshop.svg" width="90" height="90"></object>
+        </div>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-around footer-programs ">
+            <h6>Figma</h6>
+            <h6>Lottie Files</h6>
+            <h6>Illustrator</h6>
+            <h6>Photoshop</h6>
           </div>
         </div>
         
-        <div class="row mb-3 d-flex justify-content-center">
+        <div class="row mt-3 d-flex justify-content-center ">
           <div class="col-md-12">
-            <h5 class="px-3 text-center">Develop Tools</h5>
+            <h5 class="text-center">Develop Tools</h5>
           </div>
         </div>
         
         <div class="row ">
-          <div class="col-md-6 d-flex justify-content-around">
-            <object data="bootstrap.svg" width="90" height="90"></object>
-            <object data="git.svg" width="90" height="90"></object>
-          </div>
-          <div class="col-md-6 d-flex justify-content-around">
-            <object data="Group.svg" width="90" height="90"></object>
-            <object data="Group12.svg" width="100" height="100"></object>
+          <div class="col-md-12 d-flex justify-content-around">
+            <object data="features/images/bootstrap.svg" width="90" height="90"></object>
+            <object data="features/images/git.svg" width="90" height="90"></object>
+            <object data="features/images/Group.svg" width="90" height="90"></object>
+            <object data="features/images/Group12.svg" width="100" height="100"></object>
           </div>
         </div>
         <div class="row">
@@ -199,9 +312,9 @@
         </div>
         
 
-        <div class="row mb-3 d-flex justify-content-center">
+        <div class="row mt-3 d-flex justify-content-center">
           <div class="col-md-12">
-            <h5 class="px-3 text-center">Idioms</h5>
+            <h5 class="text-center">Idioms</h5>
           </div>
         </div>
 
@@ -211,19 +324,167 @@
             <object data="image18.svg" width="90" height="90"></object>
             <object data="Arabic_albayancalligraphy.svg.png" width="90" height="90"></object>
           </div>
-          </div>
         </div>
 
+
+
+
+
+
+
+
+              <!--------------------------------------------------- Galeria de trabajos ----------------------------->
+      <div class="row text-center p-4" id="portfolio">
+        <div class="col-md-12">
+            <h3 class="pt-4 text-center portfolio">Some Works!</h3>
+        </div>
       </div>
+      <!-- Carousel wrapper -->
+      
+      <div class="row">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel" >
+          <div class="carousel-inner">
+            <!-- Slide one -->
+          <div class="carousel-item active">
+          
+            <div class="d-flex justify-content-evenly">
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                <div class="card text-center border border-0">
+                  <img
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/270584137020289.6203cec409393.jpg"
+                    class="card-img-top"
+                    alt="Peaks Against the Starry Sky"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Color Blind Buttons</h5>
+                    <p class="card-text">
+                      A example about the eAccessibility with button. s
+                    </p>
+                    <a href="https://www.behance.net/gallery/133437747/Calendar-UI" target="_blank" class="btn btn-primary" >Ver más</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                    <div class="card text-center border border-0">
+                      <img
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a19e22169435509.644c35ea8750b.jpg"
+                        class="card-img-top"
+                        alt="Peaks Against the Starry Sky"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and make up the bulk
+                          of the card's content.
+                        </p>
+                        <a href="https://www.behance.net/gallery/172697947/UX-Project-Metro-Santo-Domingo" target="_blank" class="btn btn-primary" onclick=`window.location.href=https://docs.google.com/presentation/d/1LULzMNIlk1sTwvoCV6XVb65tCf_sOkDzDPNLTshFpqk/edit?usp=sharing'`>Ver más</a>
+                      </div>
+                    </div>
+              </div>
+  
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                    <div class="card text-center border border-0">
+                      <img
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2ff70b172697947.64835d026a5c2.jpg"
+                        class="card-img-top"
+                        alt="Peaks Against the Starry Sky"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Metro SD App</h5>
+                        <p class="card-text">
+                          This is a app of the subway of SD of Dominican Republic, this documentation has more details about the app, here.
+                        </p>
+                        <a href="https://www.behance.net/gallery/172697947/UX-Project-Metro-Santo-Domingo" target="_blank" class="btn btn-primary">Ver más</a>
+                      </div>
+                    </div>
+              </div>
+            </div>
 
+          </div>
 
+          <!-- Slide two -->
+          <div class="carousel-item">
+          
+            <div class="d-flex justify-content-evenly">
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                <div class="card text-center border border-0 ">
+                  <img
+                    src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/c0cd8c133437747.64b2475fb9cd0.jpg"
+                    class="card-img-top"
+                    alt="Peaks Against the Starry Sky"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Calendar UI Views</h5>
+                    <p class="card-text">
+                      this is a calendar for the user can use as agends. This exist two view:  1. "Calendar" a "Semanal". 
+                    </p>
+                    <a href="https://www.behance.net/gallery/133437747/Calendar-UI" target="_blank" class="btn btn-primary" >Ver más</a>
+                  </div>
+                </div>
+              </div>
+  
+  
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                    <div class="card text-center border border-0">
+                      <img
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a19e22169435509.644c35ea8750b.jpg"
+                        class="card-img-top"
+                        alt="Peaks Against the Starry Sky"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">supermarket</h5>
+                        <p class="card-text">
+                          A virtual Supermarket Web Application. This is a Home page with: Car Button, Categories, Subcategories, Search Bar (with optimizations buttons components).
+                        </p>
+                        <a href="https://www.behance.net/gallery/169435509/Supermarket" target="_blank" class="btn btn-primary" onclick=`window.location.href=https://www.behance.net/gallery/169435509/Supermarket'`>Ver más</a>
+                      </div>
+                    </div>
+              </div>
+  
+              <div class="col-md-3 mb-4 mb-lg-0 py-4">
+                    <div class="card text-center border border-0">
+                      <img
+                        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2ff70b172697947.64835d026a5c2.jpg"
+                        class="card-img-top"
+                        alt="Peaks Against the Starry Sky"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Metro SD App</h5>
+                        <p class="card-text">
+                          This is a app of the subway of SD of Dominican Republic, this documentation has more details about the app, here.
+                        </p>
+                        <a href="https://www.behance.net/gallery/172697947/UX-Project-Metro-Santo-Domingo" target="_blank" class="btn btn-primary">Ver más</a>
+                      </div>
+                    </div>
+              </div>
+            </div>
+
+          </div>
+          </div>
+
+          <button class="carousel-control-prev"  type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon black" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
 
 
 
         <!-- Contact -->
+        <div class="row text-center p-4" id="portfolio">
+          <div class="col-md-12">
+              <h3 class="pt-4 text-center portfolio">Contact me</h3>
+          </div>
+        </div>
 
         <div class="row" id="contact">
-            <form class="row g-3 needs-validation" novalidate>
+            <form class="row needs-validation" novalidate>
                 <div class="col-md-4">
                   <label for="validationCustom01" class="form-label">First name</label>
                   <input type="text" class="form-control" id="validationCustom01" required>
@@ -260,11 +521,16 @@
                 </div>
                 
                 <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
+                  <button class="btn btn-primary" type="submit">Send</button>
                 </div>
               </form>
         </div>
     </div>
+
+      
+
+
+
             
         
   
